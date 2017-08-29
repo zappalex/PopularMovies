@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.zappalex.popularmovies.MovieDetailActivity">
+
+    <TextView
+        android:id="@+id/tv_title_movie"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/light_grey"
+        android:paddingBottom="@dimen/spacing_vertical_medium"
+        android:paddingLeft="@dimen/spacing_horizontal_large"
+        android:paddingRight="@dimen/spacing_horizontal_large"
+        android:paddingTop="@dimen/spacing_vertical_medium"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_movie_title_land"
+        />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="@dimen/spacing_movie_container">
+
+
+            <ImageView
+                android:id="@+id/img_movie_poster"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/spacing_horizontal_large"
+                android:layout_marginRight="@dimen/spacing_horizontal_large"
+                android:contentDescription="@string/description_movie_poster"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:id="@+id/tv_movie_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/spacing_vertical_small"
+                    android:textSize="@dimen/text_movie_detail_large"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_rating"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/spacing_vertical_medium"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:id="@+id/tv_movie_overview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

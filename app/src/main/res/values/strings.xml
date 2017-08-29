@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Popular Movies</string>
+    <string name="title_movie_detail">Movie Detail</string>
+    <string name="action_sort_popular">Popular</string>
+    <string name="action_sort_top_rated">Top Rated</string>
+    <string name="msg_movie_detail_error">Unable to fetch movie details, please try again</string>
+    <string name="msg_device_offline">No Network Connection, unable to retrieve movies</string>
+    <string name="msg_movie_service_error">Unable to retrieve movies at this time</string>
+    <string name="description_movie_poster">movie poster</string>
+</resources>
